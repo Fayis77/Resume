@@ -1,155 +1,231 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Lato', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
 }
-.container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: blue;
-    height: 100vh;
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* background-color: rgb(255, 213, 0); */
+  height: 100vh;
 }
-.wrapper{
-    display: flex;
-    flex-direction: column;
-    width: 60%;
-    background-color: aqua;
-    justify-content: space-around;
-    height: 100vh;
-    
-}
-.body{
-    display: flex;
-    justify-content: space-around;
-}
-.main-box-1{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
- height: auto;
- 
-    
-    align-items: center;
-}
-.lady-img{
-    width: 10em;
-    height: 20vh;
-    border-radius: 0% 0% 50% 50%;
-    
-    
-    border: 15px solid #faf9f9;
-   
-}
-.sub-main-2{
-    display: flex;
-    flex-direction: column;
-    padding: 0em  2em;
-    background-color: rgb(175, 174, 174);
-    position: relative;
-    gap: 1em;
-   
-}
-.box-4,.box-3{
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-}
-.sub-1{
-    border-left: 3px solid yellow;
-    padding-left: 1em;
-    border-radius: 3px;
-}
-.main-box-2{
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-}
-.sub-main-1{
-    border: 2px solid yellow;
-    border-top: none;
-    border-left: none;
-    background-color: blueviolet;
-    border-right: none;
-    padding-bottom: em;
-}
-.txt-1{
-    font-size: 3rem;
-    font-weight: 300;
-}
-.txt-2{
-    font-size: 3rem;
-    font-weight: 600;
-}
-.txt-3{
-    font-weight: 500;
-    font-size: 1.3rem;
-}
-.sub-main-3{
-    display: flex;
-    gap: 1em; 
-    flex-direction: column;
-}
-h1{
-    font-size: 1.2rem;
-    color: red;
-    font-weight: 900;
-}
-h2{
-    font-size: 0.8rem;
-}
-h3{
-    color: blue;
-    font-size: 0.9rem;
-    
-}
-h5{
-   font-size: 0.8rem;
-   color: gray;
-}
-ul{
-    display: flex;
-    list-style-type: none;
-    justify-content: space-between;
-}
-.box-1{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.sub-icon{
-    display: flex;
-    flex-direction: column;
- 
-}
-.box-2{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.sub-2{
-    line-height: 1.2em;
-    display: flex;
-    flex-direction: column;
-}
-.inv{
-    visibility: hidden;
-}
-.sub-icon{
-   
-    background-color: yellow;
-    border-radius: 1em;
-}
-.icons{
-    display: flex;
-    font-size: 5em;
-    
-}
-.sub-icon-2{
-    display: flex;
-    height: 2em;
-    background-color: yellow;
-    border-radius: 1em;
-    align-items: center;
+.wrapper {
+  display: flex;
 
+  align-items: center;
+  box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.1);
+  justify-content: space-between;
+
+  background-color: #fff;
+}
+
+.main-box-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.lady-img {
+  width: 10em;
+  height: 20vh;
+  border-radius: 50%;
+  border: 15px solid #faf9f9;
+}
+.sub-main-2 {
+  display: flex;
+  flex-direction: column;
+  padding: 0em 2em;
+  background-color: rgb(235, 232, 232);
+  gap: 1.1em;
+  padding: 1.7em;
+  width: auto;
+}
+
+.image {
+  background-color: #fff;
+  border-radius: 0% 0% 50% 50%;
+}
+.box-4,
+.box-3 {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.sub-1 {
+  border-left: 3px solid yellow;
+  padding-left: 1em;
+  border-radius: 3px;
+}
+.main-box-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding: 1em;
+}
+.sub-main-1 {
+  border: 3px solid yellow;
+  border-top: none;
+  border-left: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  border-right: none;
+}
+.txt-1 {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+.txt-2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.txt-3 {
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+.sub-main-3 {
+  display: flex;
+  gap: 1em;
+  flex-direction: column;
+}
+h1 {
+  font-size: 1rem;
+  font-weight: 900;
+  margin-bottom: 0;
+}
+h2 {
+  font-size: 0.8rem;
+  margin-bottom: 0;
+}
+h3 {
+  font-size: 0.9rem;
+  margin-bottom: 0;
+}
+h5 {
+  font-size: 0.8rem;
+  color: gray;
+  margin-bottom: 0;
+}
+ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+.box-1 {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+.sub-icon {
+  display: flex;
+  flex-direction: column;
+}
+.box-2 {
+  display: flex;
+
+  align-items: center;
+  gap: 1em;
+}
+.sub-2 {
+  line-height: 1.2em;
+  display: flex;
+  flex-direction: column;
+}
+.inv {
+  visibility: hidden;
+}
+.sub-icon {
+  background-color: yellow;
+  border-radius: 1em;
+}
+.icons {
+  display: flex;
+  font-size: 1.2em;
+}
+.sub-icon-2 {
+  display: flex;
+  height: 2em;
+  background-color: yellow;
+  border-radius: 1em;
+  align-items: center;
+}
+.box-5 {
+  display: flex;
+  flex-direction: column;
+}
+.list {
+  display: flex;
+  gap: 1em;
+}
+.foot-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.accordion {
+  display: none;
+}
+@media screen and ((min-width: 760px) and (max-width:1024px)) {
+}
+@media screen and ((max-width: 760px)) {
+  .wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+    align-items: flex-start;
+  }
+  .lady-img {
+    position: absolute;
+    top: 0;
+    width: 5em;
+    height: 10vh;
+    right: 0;
+    background: none;
+    border-radius: 50%;
+  }
+  .sub-main-2 {
+    display: none;
+    /* flex-direction: row; */
+    padding: 0;
+    align-items: flex-start;
+
+    background-color: #fff;
+  }
+  .box-3 {
+    display: flex;
+    flex-direction: column;
+  }
+  .foot-box {
+    display: none;
+    flex-direction: row;
+    width: auto;
+  }
+  .txt-1 {
+    font-size: 0.9rem;
+  }
+  .txt-2 {
+    font-size: 0.9rem;
+  }
+  .txt-3 {
+    font-size: 0.9rem;
+  }
+  h1 {
+    font-size: 0.7rem;
+  }
+  li {
+    font-size: 0.7rem;
+  }
+  .accordion {
+    display: block;
+  }
+
+  .main-box-1{
+    display: block;
+  }
 }
